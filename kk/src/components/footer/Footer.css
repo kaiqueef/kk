@@ -1,3 +1,49 @@
 section.footer {
-    height:200px;
+    height:150px;
+}
+
+section.footer div {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+section.footer div .logo {
+    margin:0;
+    font-size: 50px;
+    height: 100%;
+    color: #EEE;
+    font-family: monospace;
+  
+    text-shadow:  1px 1px 1px #919191,
+                  2px 2px 1px #919191,
+                  3px 3px 1px #919191,
+                  4px 4px 1px #919191,
+      10px 10px 6px rgba(16,16,16,0.8);
+    transition: 0.2s;
+}
+
+section.footer div .logo:hover{
+    font-size: 60px;
+    cursor: pointer;
+}
+
+section.footer div .contact-info {
+}
+
+section.footer div .contact-info svg{
+    padding:10px;
+    margin:10px;
+    font-size: 20px;
+    border-radius: 50%;
+    background:#181b36;
+    color: #DDD;
+    transition: 0.2s;
+}
+
+section.footer div .contact-info a:hover svg{
+    transform: scale(1.2)
 }
