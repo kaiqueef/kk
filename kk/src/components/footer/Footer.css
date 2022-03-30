@@ -1,5 +1,6 @@
 section.footer {
     height:150px;
+    overflow: hidden;
 }
 
 section.footer div {
