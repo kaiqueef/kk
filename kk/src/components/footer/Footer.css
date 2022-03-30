@@ -21,8 +21,6 @@ section.footer div .logo {
   
     text-shadow:  1px 1px 1px #919191,
                   2px 2px 1px #919191,
-                  3px 3px 1px #919191,
-                  4px 4px 1px #919191,
       10px 10px 6px rgba(16,16,16,0.8);
     transition: 0.2s;
 }

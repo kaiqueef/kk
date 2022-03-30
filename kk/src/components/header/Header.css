@@ -38,3 +38,34 @@
     display: flex;
     align-items: center;
 }
+
+.header .navigation .contato .contato-tooltip {
+    width: 155px;
+    height: 100px;
+    background-color: #181b36;
+    position:absolute;
+    top:27px;
+    right:3px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -1;
+}
+
+.header .navigation .contato:hover .contato-tooltip {
+    z-index: 1;
+    opacity: 1;
+}
+
+.header .navigation .contato .contato-tooltip a {
+    color:#DDD;
+    text-decoration: none;
+}
+
+.header .navigation .contato .contato-tooltip a svg{
+    padding-right: 10px;
+}
