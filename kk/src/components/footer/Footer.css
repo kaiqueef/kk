@@ -1,10 +1,13 @@
 section.footer {
-    height: 150px;
+    min-height: 150px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
-section.footer div {
+section.footer > div {
     height: 100%;
+    width: 100%;
     padding: 0 20px;
     display: flex;
     align-items: center;
@@ -42,4 +45,11 @@ section.footer div .contact-info svg {
 
 section.footer div .contact-info a:hover svg {
     transform: scale(1.2)
+}
+
+@media only screen and (max-width: 850px) {
+    section.footer > div {
+        flex-wrap: wrap;    
+        justify-content: space-around;
+    }
 }
