@@ -1,16 +1,10 @@
 import './App.css';
 
-import Presentation from './components/home/sections/presentation/Presentation'
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
-import Navigations from './components/home/sections/navigation/Navigations'
-import Jobs from './components/home/sections/jobs/Jobs'
 
-import cemetery from './images/jobs/cemetery.png'
-import cemeteryGrayscale from './images/jobs/cemetery-grayscale.png'
-import OVNI from './images/jobs/OVNI.png'
-import predio from './images/jobs/predio.jpg'
-import universo from './images/jobs/universo.jpg'
+import Home from './Pages/Home'
 
 function App() {
   return (
@@ -18,17 +12,13 @@ function App() {
       <header className="App-header">
       </header>
       <body>
-        <Header/>
-        <Presentation subtitulo="Biblioteca 3d"/>
-        <Navigations/>
-        <div className="jobs-header">
-          <h3>Portfólio</h3>
-        </div>
-        <Jobs titulo="Encomendas" image={cemetery} grayImage={cemeteryGrayscale}></Jobs>
-        <Jobs titulo="ArchViz" image={predio}></Jobs>
-        <Jobs titulo="Espaço" image={universo}></Jobs>
-        {/* <Jobs image={OVNI}></Jobs> */}
-        <Footer></Footer>
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+          <Footer></Footer>
+        </BrowserRouter>
       </body>
     </div>
   );

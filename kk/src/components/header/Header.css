@@ -2,17 +2,18 @@
     color: #EEE;
     display: flex;
     justify-content: space-between;
-    background:#1c2028;
-    padding:3px;
-    height:20px;
+    background: #1c2028;
+    padding: 3px;
+    height: 20px;
 }
 
-.header .logo{
+.header .logo {
     display: flex;
     align-items: center;
 }
 
-.header a{
+.header a,
+.header div {
     display: flex;
     cursor: pointer;
     padding: 0 8px;
@@ -20,18 +21,18 @@
     border: none;
     font-size: 15px;
     font-family: monospace;
-    text-shadow:  1px 1px 1px #919191;
+    text-shadow: 1px 1px 1px #919191;
     transition: 0.2s
 }
 
-.header .logo a{
+.header .logo {
     font-size: 18px;
 }
 
-.header a:hover {
+.header a:hover,
+.header div:hover {
     font-size: 20px;
-    text-shadow:  1px 1px 1px #919191,
-      3px 3px 2px rgba(16,16,16,0.8)
+    text-shadow: 1px 1px 1px #919191, 3px 3px 2px rgba(16, 16, 16, 0.8)
 }
 
 .header .navigation {
@@ -43,9 +44,9 @@
     width: 155px;
     height: 100px;
     background-color: #181b36;
-    position:absolute;
-    top:27px;
-    right:3px;
+    position: absolute;
+    top: 27px;
+    right: 3px;
     border-radius: 5px;
     display: flex;
     justify-content: space-evenly;
@@ -61,11 +62,12 @@
     opacity: 1;
 }
 
+.header a,
 .header .navigation .contato .contato-tooltip a {
-    color:#DDD;
+    color: #DDD;
     text-decoration: none;
 }
 
-.header .navigation .contato .contato-tooltip a svg{
+.header .navigation .contato .contato-tooltip a svg {
     padding-right: 10px;
 }

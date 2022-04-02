@@ -2,16 +2,17 @@ import React from 'react';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn, faInstagram, faArtstation, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { Link } from 'react-router-dom';
 
 export default (props) => {
     return (
         <section className='header'>
-            <div className='logo'><a>KK</a></div>
+            <Link to="/" className='logo'>KK</Link>
             <div className='navigation'>
-                <a className='modelos'>Modelos</a>
-                <a className='texturas'>Texturas</a>
-                <a className='projetos'>Projetos</a>
-                <a className='contato'>Contato
+                <Link to="/modelos">Modelos</Link>
+                <Link to="/texturas">Texturas</Link>
+                <Link to="/portfolio">Portfólio</Link>
+                <div className='contato'>Contato
                     <div className='contato-tooltip'>
                         <a href="https://www.linkedin.com/in/kaique-ferreira-854a75139/" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} />
                             Linkedin
@@ -26,7 +27,7 @@ export default (props) => {
                             WhatsApp
                         </a>
                     </div>
-                </a>
+                </div>
             </div>
         </section>
     )

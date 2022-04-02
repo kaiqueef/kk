@@ -3,13 +3,14 @@ import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedinIn, faInstagram, faArtstation, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { Link } from 'react-router-dom';
 
 export default (props) => {
     return(
         <section className='footer'>
-            <div>
+            <div>            
                 <div className='logo'>
-                    <a>KK</a>
+                    <Link to="/" >KK</Link>
                 </div>
                 <div className='contact-info'>
                     <a href="https://www.linkedin.com/in/kaique-ferreira-854a75139/" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} /></a>
