@@ -9,6 +9,8 @@ body {
   -ms-user-select: none; /* Internet Explorer/Edge */
 
   -webkit-tap-highlight-color: transparent;
+  color: #DDD;
+  font-family: monospace;
 }
 
 .App {
