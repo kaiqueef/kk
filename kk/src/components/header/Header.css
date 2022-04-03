@@ -45,6 +45,7 @@
 .header .navigation {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .header .navigation .contato {
