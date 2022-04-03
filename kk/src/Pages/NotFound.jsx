@@ -10,7 +10,7 @@ export default class NotFound extends React.Component {
 
         let currentImage
         this.image = {
-            current: require(`../images/not-found/${this.getCurrentImage(this.state?.count)}.gif`)
+            current: require(`../images/not-found/${this.getCurrentImageName(this.state?.count)}.gif`)
         }
 
         if (window.performance) {
@@ -23,7 +23,7 @@ export default class NotFound extends React.Component {
         }
     }
 
-    getCurrentImage(count) {
+    getCurrentImageName(count) {
         const lastImage = 10;
         const firstImage = 1;
         if (count < firstImage) {

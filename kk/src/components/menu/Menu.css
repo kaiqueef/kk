@@ -1,0 +1,16 @@
+.section-menu {
+    display: flex;
+
+}
+
+#menu,
+section.footer{
+    width: calc(100% - 150px);
+    left: 150px;
+    position: relative;
+}
+
+#menu{
+    height: 100vh;
+    background: #181b36;
+}

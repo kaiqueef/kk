@@ -1,0 +1,17 @@
+.options {
+    padding: 3px; 
+    text-align: initial;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.options:hover {
+    padding-left: 10px;
+    background-color: #181b36;
+}
+
+
+.options:before {
+    content: '> ';
+}

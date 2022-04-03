@@ -1,0 +1,19 @@
+#side-menu {
+    height:100%;
+    width: 150px;
+    background-color: #1c2028;;
+    position: fixed;
+}
+
+#side-menu hr {
+    margin:0;
+    border: 0;
+    height: 1px;
+    background: #333;
+}
+
+#side-menu nav{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}

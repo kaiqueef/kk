@@ -6,7 +6,7 @@ import Footer from './components/footer/Footer'
 
 import NotFound from './Pages/NotFound';
 import Home from './Pages/Home'
-import Portfolio from './Pages/NotFound';
+import Portfolio from './Pages/Portfolio';
 
 function App() {
   return (
@@ -19,8 +19,14 @@ function App() {
           <Routes>
             <Route path="*" element={<NotFound />} />
             <Route path="/" element={<Home />} />
+            <Route path="/portfolio" element={<Portfolio />}>
+              <Route path='all' />
+              <Route path='ArchViz' />
+              <Route path='3d' />
+              <Route path='grafite' />
+            </Route>
           </Routes>
-          <Footer></Footer>
+          <Footer />
         </BrowserRouter>
       </body>
     </div>
