@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../components/not-found/NotFound.css'
 export default class NotFound extends React.Component {
 
     constructor(props) {
@@ -18,7 +18,6 @@ export default class NotFound extends React.Component {
                 this.increaseCount();
                 currentImage = this.state.count
             } else {
-                //   alert( "This page is not reloaded");
                 this.resetCounter();
             }
         }
@@ -27,10 +26,10 @@ export default class NotFound extends React.Component {
     getCurrentImage(count) {
         const lastImage = 10;
         const firstImage = 1;
-        if (count<firstImage){
+        if (count < firstImage) {
             return firstImage;
         }
-        if (count < lastImage){
+        if (count < lastImage) {
             return Math.round(this.state?.count);
         }
         return lastImage;
@@ -52,7 +51,9 @@ export default class NotFound extends React.Component {
         return (
             <>
                 <h1>Página não encontrada. ):</h1>
-                <img src={this.image.current} alt="Not found" width="100%" />
+                <section className='notFound'>
+                    <img src={this.image.current} alt="Not found"/>
+                </section>
             </>
         )
     }
