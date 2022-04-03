@@ -11,6 +11,7 @@ import universo from '../images/jobs/universo.jpg'
 
 
 export default () => {
+    window.localStorage.setItem('state', 0);
     return (
         <>
             <Presentation subtitulo="Biblioteca 3d" />
