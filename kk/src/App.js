@@ -6,7 +6,7 @@ import Footer from './components/footer/Footer'
 
 import NotFound from './Pages/NotFound';
 import Home from './Pages/Home'
-import Portfolio from './Pages/Portfolio';
+import Portfolio from './Pages/Portfolio/Portfolio';
 
 function App() {
   return (

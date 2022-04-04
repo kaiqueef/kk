@@ -6,7 +6,9 @@ export default (props) => {
     return (
         <section className='section-menu'>
             <SideMenu/>
-            <div id='menu'></div>
+            <div id='menu'>
+                {props.children}
+            </div>
         </section>
     )
 }

@@ -34,10 +34,14 @@
     font-size: 18px;
 }
 
-.header a:hover,
-.header div:hover {
+.header > div > a:hover,
+.header > div > div:hover {
     font-size: 20px;
     text-shadow: 1px 1px 1px #919191, 3px 3px 2px rgba(16, 16, 16, 0.8)
+}
+
+.header > div > div a:hover {
+    padding-left: 20px;
 }
 
 .header .navigation {
@@ -52,11 +56,11 @@
 
 .header .navigation .contato .contato-tooltip {
     pointer-events: none;
-    width: 155px;
+    width: 130px;
     height: 100px;
     background-color: #181b36;
     position: absolute;
-    top: 25px;
+    top: 24px;
     right: 5px;
     border-radius: 5px;
     display: flex;
@@ -64,6 +68,8 @@
     align-items: baseline;
     flex-direction: column;
     opacity: 0;
+    box-shadow: 0px 0px 0px rgb(0 0 0 / 80%);
+    transition: 0.3s;
 }
 
 .header .navigation .contato:hover .contato-tooltip,
@@ -71,7 +77,7 @@
     pointer-events: all;
     z-index: 1;
     opacity: 1;
-    transition: 0.3s;
+    box-shadow: 8px 8px 8px rgb(0 0 0 / 80%);
 }
 
 .header a,

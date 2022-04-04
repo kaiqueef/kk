@@ -1,6 +1,5 @@
 .section-menu {
     display: flex;
-
 }
 
 #menu,
@@ -10,7 +9,32 @@ section.footer{
     position: relative;
 }
 
-#menu{
-    height: 100vh;
-    background: #181b36;
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#menu .preview,
+#menu .preview img{
+    width: calc((100vw - 150px)/6);
+    aspect-ratio: 1;
+    transition:0.5s;
+}
+
+#menu .preview:hover{
+    z-index: 2;
+}
+
+#menu .preview:hover img{
+    transform: scale(1.2);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+
+    #menu .preview,
+    #menu .preview img{
+        width: calc(25vw - 38px);
+    }
 }
