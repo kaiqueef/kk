@@ -13,7 +13,7 @@ export default (props) => {
 
     function getProdutosListItem() {
         return images.map(image => {
-            return <div class="preview">
+            return <div className="preview">
                     <img src={image}></img>
                 </div>
         })

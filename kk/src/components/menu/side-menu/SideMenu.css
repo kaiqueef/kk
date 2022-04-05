@@ -1,6 +1,6 @@
 #side-menu {
     height:100%;
-    width: 150px;
+    width: var(--value);
     background-color: #1c2028;;
     position: fixed;
 }

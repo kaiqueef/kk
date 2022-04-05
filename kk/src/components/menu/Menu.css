@@ -1,11 +1,17 @@
+:root {
+    --value: 150px;
+    --items-row: 6;
+  }
+
 .section-menu {
     display: flex;
 }
 
 #menu,
-section.footer{
-    width: calc(100% - 150px);
-    left: 150px;
+.footer-menu
+{
+    width: calc(100% - var(--value));
+    left: var(--value);
     position: relative;
 }
 
@@ -16,7 +22,7 @@ section.footer{
 
 #menu .preview,
 #menu .preview img{
-    width: calc((100vw - 150px)/6);
+    width: calc((100vw - var(--value))/var(--items-row));
     aspect-ratio: 1;
     transition:0.5s;
 }
@@ -31,10 +37,13 @@ section.footer{
     cursor: pointer;
 }
 
-@media only screen and (max-width: 850px) {
+#menu .preview:focus img{
+    /* transform: scale(3); */
+}
 
-    #menu .preview,
-    #menu .preview img{
-        width: calc(25vw - 38px);
-    }
+@media only screen and (max-width: 850px) {
+    :root {
+        --value: 0px;
+        --items-row: 3
+      }
 }
