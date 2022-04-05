@@ -1,6 +1,12 @@
+:root {
+    --side-menu-size: 150px;
+    --side-menu-left: 0px;
+}
+
 #side-menu {
     height:100%;
-    width: var(--value);
+    width: var(--side-menu-size);
+    left: var(--side-menu-left);
     background-color: #1c2028;;
     position: fixed;
 }
@@ -16,4 +22,11 @@
     display: flex;
     flex-direction: column;
     padding-top: 10px;
+}
+
+
+@media only screen and (max-width: 850px) {
+    :root {
+        --side-menu-left: -150px;
+      }
 }

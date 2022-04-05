@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Itens from '../../components/menu/itens/Itens';
 import Menu from '../../components/menu/Menu';
 
 import portfolio from '../../data/portfolio/portfolio';
@@ -7,15 +8,21 @@ export default (props) => {
 
     function importAll(r) {
         return r.keys().map(r);
-      }
-      
+    }
+
     const images = importAll(require.context('../../images/portfolio/preview', false, /\.(png|jpe?g|svg)$/));
+
+    const [isActive, setActive] = useState(false);
+
+    const toggleClass = () => {
+        setActive(!isActive);
+    };
 
     function getProdutosListItem() {
         return images.map(image => {
             return <div className="preview">
-                    <img src={image}></img>
-                </div>
+                <img src={image} onClick={toggleClass} className={isActive ? 'active': null} ></img>
+            </div>
         })
 
         // return portfolio.map(prod => {
@@ -40,11 +47,8 @@ export default (props) => {
     return (
         <>
             <Menu pagina="portfolio" >
-                {getProdutosListItem()}
+                <Itens></Itens>
             </Menu>
-            {/* <div className='Teste'>
-                {getProdutosListItem()}
-            </div> */}
         </>
     )
 }
