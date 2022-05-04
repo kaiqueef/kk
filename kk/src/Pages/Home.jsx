@@ -12,11 +12,6 @@ import universo from '../images/jobs/universo.jpg'
 
 export default () => {
     window.localStorage.setItem('state', 0);
-    useEffect(
-        () => {
-            document.getElementsByClassName('footer')[0].classList.remove('footer-menu')
-        }, []
-      )
     return (
         <>
             <Presentation subtitulo="Biblioteca 3d" />

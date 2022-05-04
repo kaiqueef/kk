@@ -6,6 +6,10 @@ export default (props) => {
     useEffect(
         () => {
             document.getElementsByClassName('footer')[0].classList.add('footer-menu')
+            
+            return () => {
+                document.getElementsByClassName('footer')[0].classList.remove('footer-menu')
+            }
         }, []
       )
     return (
