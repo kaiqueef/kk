@@ -13,9 +13,8 @@ function App() {
     <div className="App">
       <header className="App-header">
       </header>
-      <body>
         <BrowserRouter>
-          <Header />
+        <Header />
           <Routes>
             <Route path="*" element={<NotFound />} />
             <Route path="/" element={<Home />} />
@@ -25,10 +24,9 @@ function App() {
               <Route path='3d' />
               <Route path='grafite' />
             </Route>
-          </Routes>
+            </Routes>
           <Footer />
         </BrowserRouter>
-      </body>
     </div>
   );
 }
