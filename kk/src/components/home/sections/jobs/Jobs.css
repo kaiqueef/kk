@@ -1,65 +1,65 @@
 .jobs {
-    display: flex;   
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .jobs .colorido,
-.jobs .preto-e-branco{
-    width: 100%;
-    background-size: cover!important;
-    height: 40vh;
-    background-attachment: fixed!important;
-    background-position: center;
-    background-repeat: no-repeat;
+.jobs .preto-e-branco {
+  width: 100%;
+  background-size: cover !important;
+  height: 40vh;
+  background-attachment: fixed !important;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .jobs .preto-e-branco {
-    filter: grayscale(1);
+  filter: grayscale(1);
 }
 
 .jobs .job-header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .jobs .job-header .job-header-image {
-    height:120px;
-    width:100%; 
-    background-size: cover!important;
-    background-attachment: fixed!important;
-    background-position: center;
-    filter: blur(10px) brightness(0.7);
-    margin: -15px 0px;
+  height: 120px;
+  width: 100%;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-position: center;
+  filter: blur(10px) brightness(0.7);
+  margin: -15px 0px;
 }
 
 .jobs .job-header .job-header-info {
-    position:absolute;
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* justify-content: space-between; */
-    justify-content: center;
-    color: #DDD;
+  position: absolute;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: space-between; */
+  justify-content: center;
+  color: #ddd;
 }
 
-.jobs .job-header .job-header-info div{
-    width: 400px;
-    height: 100px;
-        background-color: rgba(0,0,0,0.3);
-        border-radius: 5px;
-        color: #DDD;
-    }
-.jobs .job-header .job-header-info h3{       
-    font-size: 30px;
+.jobs .job-header .job-header-info div {
+  width: 400px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  color: #ddd;
+}
+.jobs .job-header .job-header-info h3 {
+  font-size: 30px;
 }
 
 @media only screen and (max-width: 850px) {
-    .jobs .job-header .job-header-info {
-        flex-direction: column;
-    }
+  .jobs .job-header .job-header-info {
+    flex-direction: column;
+  }
 }

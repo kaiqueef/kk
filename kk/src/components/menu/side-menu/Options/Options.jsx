@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
-import './Options.css'
+import "./Options.css";
 
 export default (props) => {
-    return (
-        <Link className='options' to={`${props.opcao}`} >{props.opcao}</Link>
-    )
-}
+  return (
+    <Link className="options" to={`${props.opcao}`}>
+      {props.opcao}
+    </Link>
+  );
+};

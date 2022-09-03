@@ -1,27 +1,24 @@
-.presentation h1{
-  margin:0;
+.presentation h1 {
+  margin: 0;
   font-size: 150px;
   height: 100%;
-  color: #EEE;
+  color: #eee;
   font-family: monospace;
 
-  text-shadow:  1px 1px 1px #919191,
-                2px 2px 1px #919191,
-                3px 3px 1px #919191,
-                4px 4px 1px #919191,
-    10px 10px 6px rgba(16,16,16,0.8)
+  text-shadow: 1px 1px 1px #919191, 2px 2px 1px #919191, 3px 3px 1px #919191,
+    4px 4px 1px #919191, 10px 10px 6px rgba(16, 16, 16, 0.8);
 }
 .presentation h3 {
-  margin:0;
+  margin: 0;
   font-family: monospace;
   font-size: 18px;
-  color: #EEE;
+  color: #eee;
   text-transform: uppercase;
-  text-shadow: 3px 3px 3px rgba(16,16,16,0.8)
+  text-shadow: 3px 3px 3px rgba(16, 16, 16, 0.8);
 }
 
 @media only screen and (max-width: 850px) {
-  .presentation h1{
+  .presentation h1 {
     font-size: min(20vh, 100vw);
   }
 }

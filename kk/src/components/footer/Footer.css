@@ -1,55 +1,56 @@
 section.footer {
-    min-height: 130px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
+  min-height: 130px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 section.footer > div {
-    height: 100%;
-    width: 100%;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 section.footer div .logo {
-    margin: 0;
-    font-size: 50px;
-    height: 100%;
-    font-family: monospace;
-    text-shadow: 1px 1px 1px #919191, 2px 2px 1px #919191, 10px 10px 6px rgba(16, 16, 16, 0.8);
-    transition: 0.2s;
+  margin: 0;
+  font-size: 50px;
+  height: 100%;
+  font-family: monospace;
+  text-shadow: 1px 1px 1px #919191, 2px 2px 1px #919191,
+    10px 10px 6px rgba(16, 16, 16, 0.8);
+  transition: 0.2s;
 }
 
 section.footer div .logo a {
-    color: #EEE;
-    text-decoration: none;
+  color: #eee;
+  text-decoration: none;
 }
 
 section.footer div .logo:hover {
-    font-size: 60px;
-    cursor: pointer;
+  font-size: 60px;
+  cursor: pointer;
 }
 
 section.footer div .contact-info svg {
-    padding: 10px;
-    margin: 10px;
-    font-size: 20px;
-    border-radius: 50%;
-    background: #181b36;
-    color: #DDD;
-    transition: 0.2s;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+  background: #181b36;
+  color: #ddd;
+  transition: 0.2s;
 }
 
 section.footer div .contact-info a:hover svg {
-    transform: scale(1.2)
+  transform: scale(1.2);
 }
 
 @media only screen and (max-width: 850px) {
-    section.footer > div {
-        flex-wrap: wrap;    
-        justify-content: space-around;
-    }
+  section.footer > div {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }

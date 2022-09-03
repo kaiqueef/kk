@@ -1,8 +1,8 @@
 section.notFound {
-    width: 100%;
-    background: #1c2028;
+  width: 100%;
+  background: #1c2028;
 }
-section.notFound img{
-    object-fit: contain;
-    width: min(90vh, 100vw);
+section.notFound img {
+  object-fit: contain;
+  width: min(90vh, 100vw);
 }

@@ -9,7 +9,7 @@ body {
   -ms-user-select: none; /* Internet Explorer/Edge */
 
   -webkit-tap-highlight-color: transparent;
-  color: #DDD;
+  color: #ddd;
   font-family: monospace;
 }
 
@@ -31,20 +31,20 @@ body {
 .jobs-header {
   height: 10vh;
   font-size: 35px;
-  color: #DDD;
+  color: #ddd;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.jobs-header h3{
+.jobs-header h3 {
   font-weight: 400;
   margin: 0;
   position: absolute;
   font-size: 30px;
   margin: 0;
   font-family: monospace;
-  color: #EEE;
+  color: #eee;
   text-transform: uppercase;
   text-shadow: 3px 3px 3px rgb(16 16 16 / 80%);
 }

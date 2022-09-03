@@ -1,32 +1,31 @@
 :root {
-    --side-menu-size: 150px;
-    --side-menu-left: 0px;
+  --side-menu-size: 150px;
+  --side-menu-left: 0px;
 }
 
 #side-menu {
-    height:100%;
-    width: var(--side-menu-size);
-    left: var(--side-menu-left);
-    background-color: #1c2028;;
-    position: fixed;
+  height: 100%;
+  width: var(--side-menu-size);
+  left: var(--side-menu-left);
+  background-color: #1c2028;
+  position: fixed;
 }
 
 #side-menu hr {
-    margin:0;
-    border: 0;
-    height: 1px;
-    background: #333;
+  margin: 0;
+  border: 0;
+  height: 1px;
+  background: #333;
 }
 
-#side-menu nav{
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
+#side-menu nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
 }
-
 
 @media only screen and (max-width: 850px) {
-    :root {
-        --side-menu-left: -150px;
-      }
+  :root {
+    --side-menu-left: -150px;
+  }
 }
