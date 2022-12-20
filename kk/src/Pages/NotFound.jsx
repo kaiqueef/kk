@@ -41,7 +41,7 @@ export default class NotFound extends React.Component {
     super.setState(state);
   }
   increaseCount = () => {
-    return this.setState({ ...this.state, count: this.state.count + 0.5 });
+    return this.setState({ ...this.state, count: this.state.count + 1 });
   };
 
   resetCounter = () => {
