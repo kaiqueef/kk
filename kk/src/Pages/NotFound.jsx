@@ -1,61 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../components/not-found/NotFound.css";
-export default class NotFound extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = JSON.parse(window.localStorage.getItem("state")) || {
-      count: +0,
-    };
 
-    let currentImage;
-    this.image = {
-      current: require(`../images/not-found/${this.getCurrentImageName(
-        this.state?.count
-      )}.gif`),
-    };
+const NotFound = (props) => {
+  const currentNotFoundPage =
+    JSON.parse(window.localStorage.getItem("currentNotFoundPage")) || 1;
+  const lastImage = 10;
 
-    if (window.performance) {
-      if (performance.navigation.type == 1) {
-        this.increaseCount();
-        currentImage = this.state.count;
-      } else {
-        this.resetCounter();
-      }
-    }
-  }
+  // let currentImage;
+  const image = require(`../images/not-found/${currentNotFoundPage}.gif`);
 
-  getCurrentImageName(count) {
-    const lastImage = 10;
-    const firstImage = 1;
-    if (count < firstImage) {
-      return firstImage;
-    }
-    if (count < lastImage) {
-      return Math.round(this.state?.count);
-    }
-    return lastImage;
-  }
-
-  setState(state) {
-    window.localStorage.setItem("state", JSON.stringify(state));
-    super.setState(state);
-  }
-  increaseCount = () => {
-    return this.setState({ ...this.state, count: this.state.count + 1 });
+  const resetCounter = () => {
+    window.localStorage.setItem("currentNotFoundPage", 1);
   };
 
-  resetCounter = () => {
-    return this.setState({ ...this.state, count: 1 });
-  };
+  useEffect(() => {
+    if (currentNotFoundPage < lastImage)
+      window.localStorage.setItem(
+        "currentNotFoundPage",
+        currentNotFoundPage + 1
+      );
 
-  render() {
-    return (
-      <>
-        <h1>Página não encontrada. ):</h1>
-        <section className="notFound">
-          <img src={this.image.current} alt="Not found" />
-        </section>
-      </>
-    );
-  }
-}
+    return () => {
+      resetCounter();
+    };
+  }, []);
+
+  return (
+    <>
+      <h1>Página não encontrada. ):</h1>
+      <section className="notFound">
+        <img src={image} alt="Not found" />
+      </section>
+    </>
+  );
+};
+
+export default NotFound;
