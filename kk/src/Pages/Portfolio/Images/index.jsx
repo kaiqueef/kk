@@ -1,5 +1,6 @@
 import React from "react";
-const Itens = () => {
+import "./Images.css";
+const Images = () => {
   function importAll(r) {
     return r.keys().map(r);
   }
@@ -18,15 +19,14 @@ const Itens = () => {
   };
 
   function getProdutosListItem() {
-    return images.map((image) => {
+    return images.map((image, index) => {
       return (
-        <div className="preview">
-          <img src={image} onClick={toggleClass}></img>
+        <div className="image-preview" key={index}>
+          <img src={image} onClick={toggleClass} alt={image}></img>
         </div>
       );
     });
   }
   return <>{getProdutosListItem()}</>;
 };
-
-export default Itens;
+export default Images;

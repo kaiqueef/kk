@@ -1,0 +1,48 @@
+:root {
+  --mobile: (min-width: 1024px);
+}
+
+.image-preview {
+  width: 225px;
+  margin: 10px;
+}
+
+@media (max-width: 1024px) {
+  .image-preview {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+.image-preview,
+.image-preview img {
+  aspect-ratio: 1;
+  transition: 0.5s;
+}
+
+.image-preview img {
+  width: 100%;
+}
+
+.image-preview:hover {
+  z-index: 2;
+}
+
+.image-preview:hover:not(.active) img:not(.active) {
+  transform: scale(1.2);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image-preview.active {
+  position: fixed;
+  width: calc((100vw - calc(var(--side-menu-size) + var(--side-menu-left))));
+  z-index: 3;
+  height: 100vh;
+  background: #282c34;
+}
+
+.image-preview.active img {
+  width: min(100vh, 100vw);
+  z-index: 4;
+}

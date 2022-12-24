@@ -16,43 +16,7 @@
 #menu {
   display: flex;
   flex-wrap: wrap;
-}
-
-#menu .preview {
-  width: 20%;
-}
-
-#menu .preview,
-#menu .preview img {
-  aspect-ratio: 1;
-  transition: 0.5s;
-}
-
-#menu .preview img {
-  width: 100%;
-}
-
-#menu .preview:hover {
-  z-index: 2;
-}
-
-#menu .preview:hover:not(.active) img:not(.active) {
-  transform: scale(1.2);
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#menu .preview.active {
-  position: fixed;
-  width: calc((100vw - calc(var(--side-menu-size) + var(--side-menu-left))));
-  z-index: 3;
-  height: 100vh;
-  background: #282c34;
-}
-
-#menu .preview.active img {
-  width: min(100vh, 100vw);
-  z-index: 4;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 850px) {
